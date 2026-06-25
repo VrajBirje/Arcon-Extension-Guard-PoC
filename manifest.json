@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "ARCON Extension Guard",
+  "description": "Monitor installed Chrome extensions and report them to ARCON.",
+  "version": "1.0.0",
+
+  "permissions": [
+    "management",
+    "storage",
+    "alarms",
+    "notifications"
+  ],
+
+  "host_permissions": [
+    "http://localhost:5245/*",
+    "ws://localhost:5000/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
